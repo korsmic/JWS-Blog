@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>パラパラ漫画</title>
+  </head>
+  <body>
+    <div id="target" class="rollerblade">
+      <img src="./img1.jpg" alt="">
+    </div>
+    <script src="jquery-2.2.4.min.js"></script>
+    <script src="rollerblade.min.js"></script>
+    <script>
+      $(function() {
+        // 画像の配列を定義
+        var datas = [
+          "./img1.jpg",
+          "./img2.jpg",
+          "./img3.jpg",
+          "./img4.jpg",
+        ];
+        $('#target').rollerblade({
+          drag: false, //ドラッグの設定
+          auto: true, //自動的に動かす
+          sensitivity: 125,
+          imageArray: datas,
+        });
+      });
+    </script>
+  </body>
+</html>
