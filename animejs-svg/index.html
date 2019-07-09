@@ -53,19 +53,18 @@
             easing: 'easeInOutSine',
           })
           .add({
-            targets: '#reiwa path',
-            strokeDashoffset: [anime.setDashoffset, 100],
-            stroke: '#fff',
-            duration: 4000,
+            targets: '#reiwa path', // pathを指定
+            strokeDashoffset: [anime.setDashoffset, 50],
+            stroke: '#fff', // 線の色を指定
+            duration: 4000, // 描画までの時間を設定
             delay: function(el, i) {
-              return i * 1500;
-            },
-            direction: 'alternate',
+              return i * 1500; // 2文字目以降は1500ms遅く開始
+            }
           })
           .add({
-            targets: '#reiwa path',
-            duration: 500,
-            fill: '#fff',
+            targets: '#reiwa path', // pathを指定
+            duration: 500, // 時間を指定
+            fill: '#fff', // 塗りつぶし色を指定
           });
       });
     </script>
