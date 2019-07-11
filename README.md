@@ -5,3 +5,4 @@ Blogで公開している記事のデータを格納したリポジトリにな�
 - [Blogはこちら](https://blog.jws.work/)
 - [parapara](https://korsmic.github.io/JWS-Blog/parapara/)
 - [animejs-svg](https://korsmic.github.io/JWS-Blog/animejs-svg/)
+- [chartjs](https://korsmic.github.io/JWS-Blog/chartjs/)
