@@ -124,6 +124,10 @@ header p, footer p {
   background-color: rgba(255, 255, 255, 0.7);
 }
 
+.content {
+  color: #fff;
+}
+
 .content .inner {
   display: -webkit-box;
   display: -ms-flexbox;
