@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=1240" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>スクロールしたとき表示領域がどの要素に入っているのかを判別してみる『Scroll Magic』</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:500,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
+    <script defer src="main.js"></script>
+  </head>
+  <body>
+    <section class="wrap">
+      <header>
+        <div class="inner">
+          <h1>Header</h1>
+        </div>
+      </header>
+      <nav class="gnav">
+        <div class="inner">
+          <ul class="gnav__lists">
+            <li id="nav01" class="gnav__list"><a href="#sec01"><span>Contents1</span></a></li>
+            <li id="nav02" class="gnav__list"><a href="#sec02"><span>Contents2</span></a></li>
+            <li id="nav03" class="gnav__list"><a href="#sec03"><span>Contents3</span></a></li>
+            <li id="nav04" class="gnav__list"><a href="#sec04"><span>Contents4</span></a></li>
+            <li id="nav05" class="gnav__list"><a href="#sec05"><span>Contents5</span></a></li>
+          </ul>
+        </div>
+      </nav>
+      <main class="contents">
+        <section class="mv">
+          <h1>スクロールしたとき表示領域がどの要素に入っているのかを判別してみる</h1>
+        </section>
+        <section id="sec01" class="content content-01">
+          <div class="inner">
+            <h2>Contents1</h2>
+          </div>
+        </section>
+        <section id="sec02" class="content content-02">
+          <div class="inner">
+            <h2>Contents2</h2>
+          </div>
+        </section>
+        <section id="sec03" class="content content-03">
+          <div class="inner">
+            <h2>Contents3</h2>
+          </div>
+        </section>
+        <section id="sec04" class="content content-04">
+          <div class="inner">
+            <h2>Contents4</h2>
+          </div>
+        </section>
+        <section id="sec05" class="content content-05">
+          <div class="inner">
+            <h2>Contents5</h2>
+          </div>
+        </section>
+      </main>
+      <footer>
+        <div class="inner">
+          <p>©JWS</p>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
