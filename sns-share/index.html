@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>SNS シェアボタンリンク生成</title>
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+  <link rel="stylesheet" href="main.css">
+</head>
+<body>
+  <header>
+    <p><a href="https://jws.work"><img src="https://jws.work/img/logo.002f10cf.svg" alt=""></a></p>
+  </header>
+  <h1>SNS シェアボタンリンク生成ツール</h1>
+  <em>入力を行うだけで、各種SNSのシェア用リンクを生成できます。<br>日本語はエンコードされて出力されます。</em>
+  <main>
+    <div class="inputbox inputbox-tw">
+      <h2>Twitterリンク生成</h2>
+      <h3>入力BOX</h3>
+      <dl>
+        <div>
+          <dt>テキスト</dt>
+          <dd><input class="twitter-input" id="twitter-text" type="text"></dd>
+        </div>
+        <div>
+          <dt>ハッシュタグ（複数の場合はカンマ(,)区切りで入力）</dt>
+          <dd><input class="twitter-input" id="twitter-hash" type="text"></dd>
+        </div>
+        <div>
+          <dt>シェアURL</dt>
+          <dd><input class="twitter-input" id="twitter-url" type="text"></dd>
+        </div>
+      </dl>
+      <h3>出力ＢＯＸ(エンコード)</h3>
+      <p><textarea name="twitter-output" id="twitter-output" cols="100" rows="3"></textarea></p>
+      <h3>確認用ボタン</h3>
+      <a id="twitter-check" target="blank">Twitter</a>
+    </div>
+    <div class="inputbox inputbox-line">
+      <h2>LINEリンク生成</h2>
+      <h3>入力BOX</h3>
+      <dl>
+        <div>
+          <dt>テキスト</dt>
+          <dd><input class="line-input" id="line-text" type="text"></dd>
+        </div>
+      </dl>
+      <h3>出力ＢＯＸ</h3>
+      <p><textarea id="line-output" cols="100" rows="3"></textarea></p>
+      <h3>確認用ボタン</h3>
+      <a id="line-check" target="blank">LINE</a>
+    </div>
+    <div class="inputbox inputbox-fb">
+      <h2>Facebookリンク生成</h2>
+      <h3>入力BOX</h3>
+      <dl>
+        <div>
+          <dt>シェアURL</dt>
+          <dd><input class="fb-input" id="fb-url" type="text"></dd>
+        </div>
+      </dl>
+      <h3>出力ＢＯＸ</h3>
+      <p><textarea id="fb-output" rows="3"></textarea></p>
+      <h3>確認用ボタン</h3>
+      <a id="fb-check" target="blank">Facebook</a>
+    </div>
+  </main>
+  <footer>
+    ©JWS
+  </footer>
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>

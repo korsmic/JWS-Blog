@@ -1,0 +1,129 @@
+* {
+  box-sizing: border-box;
+  font-family: '游ゴシック Medium', YuGothic, YuGothicM, 'Hiragino Kaku Gothic ProN', 'Hiragino Kaku Gothic Pro', メイリオ, Meiryo, sans-serif;
+}
+
+header {
+  background-color: #000;
+  height: 100px;
+  p {
+    height: 100%;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    img {
+      width: auto;
+      height: 60px;
+    }
+  }
+}
+
+main {
+  padding: 20px 0px 50px;
+  // background-color: lightgray;
+}
+
+h1 {
+  font-size: 30px;
+  font-weight: bold;
+  margin: 20px;
+  padding-left: 15px;
+  border-left: 10px solid #333;
+}
+em {
+  font-size: 16px;
+  padding: 0 20px 20px;
+  display: block;
+}
+
+.inputbox {
+  // margin-top: 30px;
+  border-top: 3px solid #fff;
+  padding-top: 30px;
+  padding: 30px;
+  color: #fff;
+
+  
+  &-tw {
+    background-color: #1DA1F2;
+  }
+  &-line {
+    background-color: #00B900;
+  }
+  &-fb {
+    background-color: #3C5A99;
+  }
+  &:first-child {
+    margin-top: 0;
+    border-top: 0;
+    // padding-top: 0;
+  }
+  h2 {
+    font-size: 25px;
+    font-weight: bold;
+  }
+  h3 {
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px 0;
+  }
+  dl {
+    background-color: #333;
+    padding: 20px;
+    max-width: 700px;
+    div {
+      display: flex;
+      padding: 10px 0;
+      flex-direction: column;
+      &:first-child {
+        padding-top: 0;
+      }
+    }
+    dt {
+      font-size: 18px;
+      white-space: nowrap;
+      color: #fff;
+      padding-right: 20px;
+    }
+    dd {
+      width: 100%;
+      input {
+        width: 100%;
+        max-width: 600px;
+      }
+    }
+  }
+  textarea {
+    width: 100%;
+    max-width: 600px;
+    margin-left: 20px;
+  }
+  a {
+    width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: gray;
+    border-radius: 15px;
+    height: 50px;
+    color: #333;
+    font-weight: bold;
+    border: 2px solid #333;
+    transition: 0.3s all ease-in;
+    text-decoration: none;
+    &.active {
+      background-color: lightblue;
+      &:hover {
+        background-color: blue;
+        color: #fff;
+      }
+    }
+  }
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+}
